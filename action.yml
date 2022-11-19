@@ -1,6 +1,6 @@
-name: 'TODO: Run <linter-name> with reviewdog'
-description: 'TODO: 🐶 Run <linter-name> with reviewdog on pull requests to improve code review experience.'
-author: 'TODO: <your-name>'
+name: 'shellcheck-actions'
+description: 'shellcheck'
+author: 'Penpen7'
 inputs:
   github_token:
     description: 'GITHUB_TOKEN'
