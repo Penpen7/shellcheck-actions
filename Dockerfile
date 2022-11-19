@@ -1,11 +1,11 @@
-FROM alpine:3.16
+FROM golang:1.19.3-alpine
 
 ENV REVIEWDOG_VERSION=v0.14.1
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
 # hadolint ignore=DL3006
-RUN apk --no-cache add git
+RUN apk --no-cache add git shellcheck
 
 RUN wget -O - -q https://raw.githubusercontent.com/reviewdog/reviewdog/master/install.sh| sh -s -- -b /usr/local/bin/ ${REVIEWDOG_VERSION}
 
